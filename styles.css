@@ -2,12 +2,12 @@ body {
     display: block;
     margin: 0px;
 }
+ 
 .banner {
     background-color: #004176;
     width: 100%;
     text-align: center;
 }
-
 .banner h1 {
     margin: 0px;
     width: 100%;
@@ -22,17 +22,21 @@ body {
     text-align: center;
     color: #FFFFFF;
     justify-content: center;
-    padding: 1%;
+    
 }
+
+
 
 .container {
     text-align: center;
-    margin-top: 20px;
-}
+
+} 
 
 .logo {
-    display: inline-block;
-    margin-bottom: 20px;
+    max-width: 100%;
+    height: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .logo img {
@@ -40,16 +44,17 @@ body {
     height: auto;
 }
 
-@media (max-width: 768px) {
-    .container {
-        margin-top: 10px;
+@media (max-width: 420px) {
+    .logo img {
+        max-width: 100%;
+        max-height: 200px; /* Establece aquí el tamaño máximo deseado */
     }
 }
 
 .login-form {
-    max-width: 300px;
-    margin: 0 auto;
-    padding: 20px;
+    max-width: 343px;
+    margin: 0px auto;
+    padding: 37px;
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -59,30 +64,55 @@ body {
     margin-bottom: 10px;
 }
 
+
 .form-group label {
     display: block;
     margin-bottom: 5px;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
 }
 
 .form-group input {
-    width: 100%;
+    width: 90%;
+    min-height: 33px;
+    margin: 5px 0px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
     padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
+    font-family: 'Roboto', sans-serif;
 }
 
+
 button {
-    background-color: #004176;
+    background-color: #009640;
     color: #fff;
     border: none;
     padding: 10px;
-    width: 100%;
+    width: 65%;
     cursor: pointer;
     border-radius: 3px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 button:hover {
-    background-color: #002645;
+    background-color: #015e29;
 }
 
 .forgot-password {
@@ -91,5 +121,15 @@ button:hover {
 }
 
 .forgot-password a {
-    color: #004176;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #0000FF;
+    justify-content: center;
+    padding-bottom: 10px;
 }
